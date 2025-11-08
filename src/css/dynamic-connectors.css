@@ -1,0 +1,36 @@
+#connect-svg {
+  z-index: 1;
+  pointer-events: none;
+}
+
+#connect-svg path.connector {
+  fill: none;
+  stroke: #000;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 1;
+  transition: stroke-dashoffset 800ms cubic-bezier(.2,.9,.2,1);
+}
+
+#connect-svg path.connector:hover {
+  stroke-width: 5;
+}
+
+.projects {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #connect-svg path.connector {
+    stroke-width: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #connect-svg path.connector {
+    transition: opacity 200ms ease;
+    stroke-dasharray: none !important;
+    stroke-dashoffset: 0 !important;
+  }
+}

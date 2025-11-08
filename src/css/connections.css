@@ -1,0 +1,44 @@
+/* Connecting Lines Between Sections */
+.connection-line {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.line-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.animated-path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 200;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+.animated-path.animate {
+    stroke-dashoffset: 0;
+}
+
+/* Scroll Animation Trigger */
+.connection-line.in-view .animated-path {
+    stroke-dashoffset: 0;
+}
+
+/* Different line styles for variety */
+#line1 .animated-path {
+    stroke: #333;
+    stroke-width: 2;
+}
+
+#line2 .animated-path {
+    stroke: #ff7b00;
+    stroke-width: 3;
+}
+
+#line3 .animated-path {
+    stroke: #333;
+    stroke-width: 2;
+}

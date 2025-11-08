@@ -1,0 +1,69 @@
+/* Navigation Styles */
+nav {
+    background: transparent;
+    color: #333;
+    padding: 2rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+
+nav ul li {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 25px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+    animation: slideInDown 0.8s ease-out;
+}
+
+nav ul li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    padding: 12px 24px;
+    display: block;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav ul li:hover a {
+    color: white;
+    background: transparent;
+}
+
+nav ul li.active {
+    background: #000;
+    border: 1px solid #000;
+}
+
+nav ul li.active a {
+    color: white;
+}
+
+nav ul li.active:hover {
+    background: #333;
+}

@@ -1,0 +1,6 @@
+Add your images here:
+- profile.jpg (for about section)
+- hero-bg.jpg (for hero background)
+- project1.jpg (for project 1)
+- project2.jpg (for project 2)
+- logo.png (for navigation logo)

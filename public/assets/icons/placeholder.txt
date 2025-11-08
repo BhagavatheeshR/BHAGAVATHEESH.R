@@ -1,0 +1,6 @@
+Add your icons here:
+- github.svg
+- linkedin.svg
+- email.svg
+- phone.svg
+- favicon.ico
