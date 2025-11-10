@@ -1,0 +1,156 @@
+/* Rectangle Tab Container Projects */
+.projects {
+    padding: 100px 0;
+    background: linear-gradient(135deg, rgb(247, 247, 247) 0%, rgb(194, 194, 194) 100%);
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.projects-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+}
+
+.project-tabs {
+    position: relative;
+    height: 800vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-tab {
+    position: sticky;
+    top: 50px;
+    width: 30cm;
+    height: 20cm;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.project-tab:nth-child(1) { z-index: 1; }
+.project-tab:nth-child(2) { z-index: 2; }
+.project-tab:nth-child(3) { z-index: 3; }
+.project-tab:nth-child(4) { z-index: 4; }
+.project-tab:nth-child(5) { z-index: 5; }
+.project-tab:nth-child(6) { z-index: 6; }
+.project-tab:nth-child(7) { z-index: 7; }
+.project-tab:nth-child(8) { z-index: 8; }
+.project-tab:nth-child(9) { z-index: 9; }
+.project-tab:nth-child(10) { z-index: 10; }
+
+.project-tab:hover {
+    transform: scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.project-tab:nth-child(even) .tab-content {
+    flex-direction: row-reverse;
+}
+
+.tab-image {
+    flex: 1;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-image img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-tab:hover .tab-image img {
+    transform: scale(1.1);
+}
+
+.tab-info {
+    flex: 1.5;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tab-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tab-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech-tags span {
+    background: linear-gradient(135deg, #333, #666);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .tab-content {
+        flex-direction: column !important;
+        min-height: auto;
+    }
+    
+    .project-tab:nth-child(even) .tab-content {
+        flex-direction: column !important;
+    }
+    
+    .tab-image {
+        height: 200px;
+        width: 100%;
+    }
+    
+    .tab-info {
+        padding: 30px 20px;
+    }
+    
+    .tab-info h3 {
+        font-size: 1.5rem;
+    }
+    
+    .tab-info p {
+        font-size: 1rem;
+    }
+}

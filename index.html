@@ -9,10 +9,8 @@
     <link rel="stylesheet" href="src/css/navigation.css">
     <link rel="stylesheet" href="src/css/hero.css">
     <link rel="stylesheet" href="src/css/sections.css">
-    <link rel="stylesheet" href="src/css/projects.css">
-    <link rel="stylesheet" href="src/css/connections.css">
     <link rel="stylesheet" href="src/css/contact.css">
-    <link rel="stylesheet" href="src/css/project-enhancements.css">
+    <link rel="stylesheet" href="src/css/rectangle-tabs.css">
 
     <link rel="stylesheet" href="src/css/animations.css">
     <link rel="stylesheet" href="src/css/responsive.css">
@@ -104,158 +102,184 @@
         </div>
     </section>
 
-
-
-    <section id="projects" class="projects projects-section">
+    <section id="projects" class="projects">
         <div class="container">
             <h2>Featured Projects</h2>
-            <p class="projects-subtitle">Showcasing my latest work and innovations</p>
+            <p class="projects-subtitle">Explore my latest work and innovations</p>
             
-
-            
-            <div class="zigzag-container">
-                <div class="project-row left" onclick="openProject('ecommerce')">
-                    <div class="image-card thumb" data-connect="p1">
-                        <img src="public/assets/images/app.jpg" alt="E-Commerce App">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project</span>
+            <div class="project-tabs">
+                <div class="project-tab active" data-project="ecommerce">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="E-Commerce App">
                         </div>
-                    </div>
-                    <div class="description card" data-connect="p1">
-                        <h3>E-Commerce Mobile App</h3>
-                        <p>A comprehensive Flutter-based e-commerce platform with secure payment integration, real-time inventory management, and AWS cloud infrastructure for scalable performance.</p>
-                        <div class="tech-tags">
-                            <span>Flutter</span>
-                            <span>AWS</span>
-                            <span>Node.js</span>
-                            <span>Stripe</span>
-                        </div>
-                        <div class="project-stats">
-                            <span>📱 Mobile App</span>
-                            <span>⭐ 4.8 Rating</span>
+                        <div class="tab-info">
+                            <h3>E-Commerce Mobile App</h3>
+                            <p>Flutter-based e-commerce platform with secure payment integration and AWS cloud infrastructure.</p>
+                            <div class="tech-tags">
+                                <span>Flutter</span>
+                                <span>AWS</span>
+                                <span>Node.js</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
 
-                
-                <div class="project-row right" onclick="openProject('dashboard')">
-                    <div class="description card" data-connect="p2">
-                        <h3>AWS Cloud Dashboard</h3>
-                        <p>Real-time monitoring and analytics dashboard for AWS infrastructure with interactive data visualizations, automated alerts, and comprehensive performance metrics.</p>
-                        <div class="tech-tags">
-                            <span>React</span>
-                            <span>AWS CloudWatch</span>
-                            <span>D3.js</span>
-                            <span>TypeScript</span>
+                <div class="project-tab" data-project="dashboard">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Cloud Dashboard">
                         </div>
-                        <div class="project-stats">
-                            <span>📊 Web Dashboard</span>
-                            <span>🚀 Live Data</span>
-                        </div>
-                    </div>
-                    <div class="image-card thumb" data-connect="p2">
-                        <img src="public/assets/images/app.jpg" alt="Cloud Dashboard">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project</span>
+                        <div class="tab-info">
+                            <h3>AWS Cloud Dashboard</h3>
+                            <p>Real-time monitoring dashboard for AWS infrastructure with interactive data visualizations.</p>
+                            <div class="tech-tags">
+                                <span>React</span>
+                                <span>AWS</span>
+                                <span>D3.js</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
 
-                
-                <div class="project-row left" onclick="openProject('ai')">
-                    <div class="image-card thumb" data-connect="p3">
-                        <img src="public/assets/images/app.jpg" alt="AI Web App">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project</span>
+                <div class="project-tab" data-project="ai">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="AI Platform">
                         </div>
-                    </div>
-                    <div class="description card" data-connect="p3">
-                        <h3>AI Vision Platform</h3>
-                        <p>Advanced machine learning web application featuring computer vision, image classification, and real-time object detection with 95% accuracy rate.</p>
-                        <div class="tech-tags">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>Flask</span>
-                            <span>OpenCV</span>
-                        </div>
-                        <div class="project-stats">
-                            <span>🤖 AI Powered</span>
-                            <span>🎯 95% Accuracy</span>
+                        <div class="tab-info">
+                            <h3>AI Vision Platform</h3>
+                            <p>Machine learning web application with computer vision and real-time object detection.</p>
+                            <div class="tech-tags">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Flask</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
 
-                
-                <div class="project-row right" onclick="openProject('banking')">
-                    <div class="description card" data-connect="p4">
-                        <h3>SecureBank Mobile</h3>
-                        <p>Next-generation mobile banking application with biometric authentication, blockchain security, and seamless transaction management for modern banking needs.</p>
-                        <div class="tech-tags">
-                            <span>Flutter</span>
-                            <span>Firebase</span>
-                            <span>Stripe</span>
-                            <span>Blockchain</span>
+                <div class="project-tab" data-project="banking">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Banking App">
                         </div>
-                        <div class="project-stats">
-                            <span>🔒 Bank Grade Security</span>
-                            <span>💳 Payment Gateway</span>
-                        </div>
-                    </div>
-                    <div class="image-card thumb" data-connect="p4">
-                        <img src="public/assets/images/app.jpg" alt="Mobile Banking">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project</span>
+                        <div class="tab-info">
+                            <h3>SecureBank Mobile</h3>
+                            <p>Next-generation banking app with biometric authentication and blockchain security.</p>
+                            <div class="tech-tags">
+                                <span>Flutter</span>
+                                <span>Firebase</span>
+                                <span>Blockchain</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
 
-                
-                <div class="project-row left" onclick="openProject('social')">
-                    <div class="image-card thumb" data-connect="p5">
-                        <img src="public/assets/images/app.jpg" alt="Social Platform">
-                        <div class="project-overlay">
-                            <span class="view-project">View Project</span>
+                <div class="project-tab" data-project="social">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Social Platform">
+                        </div>
+                        <div class="tab-info">
+                            <h3>ConnectHub Social</h3>
+                            <p>Social media platform with real-time messaging, video calls, and advanced privacy controls.</p>
+                            <div class="tech-tags">
+                                <span>React Native</span>
+                                <span>Socket.io</span>
+                                <span>MongoDB</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="description card" data-connect="p5">
-                        <h3>ConnectHub Social</h3>
-                        <p>Modern social media platform with real-time messaging, video calls, content sharing, and advanced privacy controls for seamless social interactions.</p>
-                        <div class="tech-tags">
-                            <span>React Native</span>
-                            <span>Socket.io</span>
-                            <span>MongoDB</span>
-                            <span>WebRTC</span>
+                </div>
+
+                <div class="project-tab" data-project="iot">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="IoT Platform">
                         </div>
-                        <div class="project-stats">
-                            <span>💬 Real-time Chat</span>
-                            <span>📹 Video Calls</span>
+                        <div class="tab-info">
+                            <h3>Smart IoT Platform</h3>
+                            <p>Internet of Things platform for smart home automation with real-time device monitoring.</p>
+                            <div class="tech-tags">
+                                <span>Arduino</span>
+                                <span>AWS IoT</span>
+                                <span>MQTT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab" data-project="blockchain">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Blockchain App">
+                        </div>
+                        <div class="tab-info">
+                            <h3>CryptoWallet Pro</h3>
+                            <p>Secure cryptocurrency wallet with multi-chain support and DeFi integration capabilities.</p>
+                            <div class="tech-tags">
+                                <span>Solidity</span>
+                                <span>Web3.js</span>
+                                <span>Ethereum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab" data-project="healthcare">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Healthcare App">
+                        </div>
+                        <div class="tab-info">
+                            <h3>MediTrack System</h3>
+                            <p>Healthcare management system with patient records, appointment scheduling, and telemedicine.</p>
+                            <div class="tech-tags">
+                                <span>Vue.js</span>
+                                <span>PostgreSQL</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab" data-project="gaming">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Gaming Platform">
+                        </div>
+                        <div class="tab-info">
+                            <h3>GameHub Arena</h3>
+                            <p>Multiplayer gaming platform with real-time tournaments, leaderboards, and social features.</p>
+                            <div class="tech-tags">
+                                <span>Unity</span>
+                                <span>C#</span>
+                                <span>Photon</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tab" data-project="education">
+                    <div class="tab-content">
+                        <div class="tab-image">
+                            <img src="public/assets/images/app.jpg" alt="Education Platform">
+                        </div>
+                        <div class="tab-info">
+                            <h3>EduLearn Portal</h3>
+                            <p>Online learning management system with interactive courses, quizzes, and progress tracking.</p>
+                            <div class="tech-tags">
+                                <span>Angular</span>
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div id="expanded-modal" class="modal">
-            <div class="modal-content">
-                <span class="close" onclick="closeModal()">&times;</span>
-                <div class="modal-body">
-                    <img id="modal-img" src="" alt="">
-                    <div class="modal-info">
-                        <h2 id="modal-title"></h2>
-                        <p id="modal-desc"></p>
-                        <div class="tech-tags" id="modal-tech"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     </section>
-
-
 
     <section id="contact" class="contact">
         <div class="container">
@@ -325,39 +349,6 @@
     </section>
 
     <script>
-        function expandCard(card) {
-            const modal = document.getElementById('expanded-modal');
-            const title = card.dataset.title;
-            const desc = card.dataset.desc;
-            const tech = card.dataset.tech;
-            const imgSrc = card.querySelector('img').src;
-            
-            document.getElementById('modal-title').textContent = title;
-            document.getElementById('modal-desc').textContent = desc;
-            document.getElementById('modal-img').src = imgSrc;
-            
-            const techTags = document.getElementById('modal-tech');
-            techTags.innerHTML = '';
-            tech.split(', ').forEach(t => {
-                const span = document.createElement('span');
-                span.textContent = t;
-                techTags.appendChild(span);
-            });
-            
-            modal.style.display = 'block';
-        }
-        
-        function closeModal() {
-            document.getElementById('expanded-modal').style.display = 'none';
-        }
-        
-        window.onclick = function(event) {
-            const modal = document.getElementById('expanded-modal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-        
         // Navigation active state
         document.querySelectorAll('nav a').forEach(link => {
             link.addEventListener('click', function() {
@@ -365,45 +356,9 @@
                 this.parentElement.classList.add('active');
             });
         });
-        
-        function openProject(projectId) {
-            const projects = {
-                ecommerce: {
-                    title: 'E-Commerce Mobile App',
-                    desc: 'A comprehensive Flutter-based e-commerce platform with secure payment integration, real-time inventory management, and AWS cloud infrastructure.',
-                    tech: 'Flutter, AWS, Node.js, Stripe, MongoDB'
-                },
-                dashboard: {
-                    title: 'AWS Cloud Dashboard', 
-                    desc: 'Real-time monitoring and analytics dashboard for AWS infrastructure with interactive data visualizations and automated alerts.',
-                    tech: 'React, AWS CloudWatch, D3.js, TypeScript'
-                },
-                ai: {
-                    title: 'AI Vision Platform',
-                    desc: 'Advanced machine learning web application featuring computer vision, image classification, and real-time object detection.',
-                    tech: 'Python, TensorFlow, Flask, OpenCV'
-                }
-            };
-            
-            const project = projects[projectId];
-            if (project) {
-                document.getElementById('modal-title').textContent = project.title;
-                document.getElementById('modal-desc').textContent = project.desc;
-                document.getElementById('modal-img').src = 'public/assets/images/app.jpg';
-                
-                const techTags = document.getElementById('modal-tech');
-                techTags.innerHTML = '';
-                project.tech.split(', ').forEach(t => {
-                    const span = document.createElement('span');
-                    span.textContent = t;
-                    techTags.appendChild(span);
-                });
-                
-                document.getElementById('expanded-modal').style.display = 'block';
-            }
-        }
     </script>
 
+    <script src="src/js/stack-animation.js"></script>
     <script type="module" src="src/js/app.js"></script>
 </body>
 </html>
