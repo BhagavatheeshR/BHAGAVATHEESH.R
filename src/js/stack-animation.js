@@ -20,15 +20,24 @@ window.addEventListener('scroll', () => {
     ));
     
     tabs.forEach((tab, index) => {
-        const showAt = index * 0.1;
+        const showAt = index * 0.08;
+        const currentTab = Math.floor(scrollProgress / 0.08);
         
         if (scrollProgress > showAt) {
             tab.style.opacity = '1';
             tab.style.transform = 'translateY(0)';
+            
+            // Add background class to tabs behind current tab
+            if (index < currentTab) {
+                tab.classList.add('background');
+            } else {
+                tab.classList.remove('background');
+            }
         } else {
             if (index > 0) {
                 tab.style.opacity = '0';
                 tab.style.transform = 'translateY(100px)';
+                tab.classList.remove('background');
             }
         }
     });

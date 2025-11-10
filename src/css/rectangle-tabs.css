@@ -128,19 +128,25 @@
 }
 
 @media (max-width: 768px) {
+    .projects {
+        padding: 50px 0;
+    }
+    
     .project-tabs {
-        height: 600vh;
+        height: 400vh;
+        padding: 20px 0;
     }
     
     .project-tab {
-        width: 95vw;
-        height: 15cm;
+        width: 90vw;
+        height: 12cm;
         margin: 0 auto;
+        position: relative;
     }
     
     .project-tab.background {
-        width: 96vw;
-        height: 16cm;
+        width: 92vw;
+        height: 13cm;
     }
     
     .tab-content {

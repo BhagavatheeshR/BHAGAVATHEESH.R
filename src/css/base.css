@@ -30,9 +30,18 @@ section {
     
     section {
         padding: 3rem 0;
+        position: relative;
+        z-index: 1;
     }
     
     body {
         font-size: 14px;
+        overflow-x: hidden;
+    }
+    
+    #contact {
+        margin-top: 100px;
+        padding: 4rem 0;
+        background: linear-gradient(135deg, rgb(247, 247, 247) 0%, rgb(194, 194, 194) 100%) !important;
     }
 }
