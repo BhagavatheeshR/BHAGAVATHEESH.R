@@ -69,6 +69,17 @@
     font-size: 1rem;
 }
 
+.contact-card a {
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
 .glass-form {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
