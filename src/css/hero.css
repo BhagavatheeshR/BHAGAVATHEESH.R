@@ -72,6 +72,37 @@
     animation: fadeInUp 1s ease-out 0.5s both;
 }
 
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .hero-profile-img {
+        width: 80vw;
+        height: 40vh;
+        margin-bottom: 20px;
+    }
+    
+    .hero-content {
+        padding: 0 1rem;
+    }
+    
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .name-svg {
+        height: 80px;
+    }
+    
+    .hero-content p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+}
+
 @keyframes slideUpSlow {
     0% {
         transform: translateY(100vh);

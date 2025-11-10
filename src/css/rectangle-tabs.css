@@ -128,9 +128,24 @@
 }
 
 @media (max-width: 768px) {
+    .project-tabs {
+        height: 600vh;
+    }
+    
+    .project-tab {
+        width: 95vw;
+        height: 15cm;
+        margin: 0 auto;
+    }
+    
+    .project-tab.background {
+        width: 96vw;
+        height: 16cm;
+    }
+    
     .tab-content {
         flex-direction: column !important;
-        min-height: auto;
+        height: 100%;
     }
     
     .project-tab:nth-child(even) .tab-content {
@@ -138,19 +153,38 @@
     }
     
     .tab-image {
-        height: 200px;
+        height: 40%;
         width: 100%;
+        padding: 15px;
+    }
+    
+    .tab-image img {
+        border-radius: 20px;
     }
     
     .tab-info {
-        padding: 30px 20px;
+        flex: 1;
+        padding: 20px;
+        text-align: center;
     }
     
     .tab-info h3 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
     }
     
     .tab-info p {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .tech-tags {
+        justify-content: center;
+        gap: 8px;
+    }
+    
+    .tech-tags span {
+        font-size: 0.8rem;
+        padding: 6px 12px;
     }
 }
